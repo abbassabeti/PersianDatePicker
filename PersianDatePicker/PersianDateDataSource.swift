@@ -21,7 +21,7 @@ struct PersianDateDataSource {
 			return c
 		}()
 		
-		years = Array(1300...1500)
+		years = Array(1395...1410)
 		persianMonths = cal.monthSymbols
 	}
 	
@@ -72,7 +72,7 @@ struct PersianDateDataSource {
         dateFormatter.calendar = Calendar(identifier: .persian)
         let persianDate = dateFormatter.string(from: date)
         let splitDate = persianDate.components(separatedBy: "/")
-        let year = Int(splitDate[0]) ?? 1300
+        let year = Int(splitDate[0]) ?? 1395
         let month = Int(splitDate[1]) ?? 1
         let day = Int(splitDate[2]) ?? 1
         

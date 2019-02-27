@@ -14,7 +14,7 @@ public class PersianDatePickerView: UIView {
 	//MARK: - Inspectables
 	@IBInspectable var fontColor: UIColor = .black
 	//MARK: - Properties
-	public var year = 1300
+	public var year = 1397
 	public var month = 1
 	public var day = 1
 
