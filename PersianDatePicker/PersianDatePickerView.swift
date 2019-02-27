@@ -167,7 +167,7 @@ extension PersianDatePickerView: UIPickerViewDelegate {
 			label.text = format.string(from: persianNumber!)
 			
 		case 1:
-			label.text = row + 1//persianDateDataSource.persianMonths[row]
+            label.text = String(format: "%02d",row + 1)//persianDateDataSource.persianMonths[row]
 			
 		case 2:
 			let day = String(persianDateDataSource.daysRange(ofYear: year, month: month)[row])
